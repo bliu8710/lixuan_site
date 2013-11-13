@@ -17,11 +17,11 @@ function hideall() {
 $(document).ready(function(){
 
 	hideall();
-	//$("#home").show();
-	//$("#home_label").show();
+	$("#home").show();
+	$("#home_label").show();
 
-	$("#about").show();
-	$("#about_label").show();
+	//$("#about").show();
+	//$("#about_label").show();
 
 
 	$("#home_button").click(function(){
@@ -60,4 +60,22 @@ $(document).ready(function(){
 		$("#contact_label").show();
 	});
 
+	$('#slides').slidesjs({
+		width: 1373,
+		height: 613,
+		navigation: {
+			active: false,
+		},
+		play: {
+			active: false,
+			auto: true,
+			interval: 5000,
+			swap: true,
+			restartDelay: 1000
+		},
+		callback: {
+			complete: function(number) {
+			}
+		}
+	});
 });
