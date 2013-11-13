@@ -66,15 +66,12 @@
 }
 
 .footer {
-	position: absolute;
 	color: #ffffff;
+	background-color: #000000;
 	top: 880px;
 	width: 100%;
+	position: relative;
+	margin-top: -40px; /* footer高度的负值 */
 	height: 40px;
-	background-color: #000000;
-}
-
-.shrink {
-	padding: 0px;
-	margin: 0px;
+	clear:both;
 }
