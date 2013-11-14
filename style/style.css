@@ -1,18 +1,24 @@
+body {
+	font-family: "微软雅黑", tahoma, arial, 'Hiragino Sans GB' sans-serif;
+		background-color: #eeeeee;
+}
+
 .header {
 	width: 100%;
-	height: 15px;
-	background-color: #000000;
+	height: 12px;
+	background-repeat: repeat-x;
 }
 
 .logo {
 	width: 117px;
 	height: 71px;
-	
+	margin-top: 26px;
+	margin-left: 20px;
 	float: left;
 }
 
 .nav_top {
-	margin-top: 30px;
+	margin-top: 50px;
 	float: right;
 }
 
@@ -30,7 +36,7 @@
 	float: right;
 	clear: both;
 	margin-top: 10%;
-	margin-right: 65px;
+	margin-right: 63px;
 }
 
 .nav_right ul {
@@ -66,19 +72,19 @@
 	margin-top: 8%;
 	margin-bottom: 1%;
 	height: 100%;
-	/*background-color: #eeeeee;*/
 }
 
 .footer {
 	color: #ffffff;
-	background-color: #000000;
+	/*background-color: #000000;*/
 	width: 100%;
 	position: relative;
-	margin-top: -40px; /* footer高度的负值 */
-	height: 40px;
+	margin-top: -32px; /* footer高度的负值 */
+	height: 32px;
 	clear:both;
 	vertical-align: middle;
-	line-height: 40px;
+	line-height: 32px;
+	background-repeat: repeat-x;
 }
 
 
@@ -111,5 +117,171 @@
 }
 
 .slidesjs-pagination li a:hover {
-background-position: 0 -26px
+	background-position: 0 -26px
 }
+
+
+.en-title .black-part {
+	color: black;
+	font-size: 60px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	margin: 14px 0;
+}
+
+.en-title .grey-part {
+	color: #7c7c7c;
+	font-size: 60px;
+	font-weight: 600;
+	margin: 14px 0;
+}
+
+.en-title .small-part {
+	color: #7e7e7e;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	margin: 14px 0;
+}
+
+.cn-title h3 {
+	font-size: 22px;
+	font-weight: 600;
+	padding-top: 150px;
+	margin-bottom: 18px;
+}
+
+
+.en-title {
+	text-align: right;
+	float: left;
+	width: 40%;
+}
+
+.cn-title {
+	width: 492px;
+	margin-left: 42%;
+	border-bottom: 1px solid black;
+}
+
+
+.content {
+	width: 483px;
+	margin-left: 42.5%;
+	margin-top: 18px;
+}
+
+.content article {
+	font-size: 16px;
+	color: #828282;
+	letter-spacing: 0.5px;
+	line-height: 210%;
+}
+
+.content h4 {
+	font-size: 16px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.content .small-size {
+	font-size: 13px;
+	color: #828282;
+}
+
+#service .content {
+	line-height: 190%;
+}
+
+#contact {
+	padding-top: 11%;
+}
+
+#contact .cn-title{
+	width: 296px;
+}
+
+#contact .cn-title h3 {
+	font-size: 27px;
+	font-weight: 600;
+	letter-spacing: 2.5px;
+	padding-top: 145px;
+	margin-bottom: 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* work */
+#work .en-title {
+	width: 20%;
+}
+
+#work .cn-title {
+	width: 885px;
+	margin-left: 23%;
+}
+
+#work .content {
+	width: 80%;
+	margin-left: 4%;
+	margin-top: 38px;
+}
+
+#work .content div {
+	display: inline-block;
+}
+
+#work .anchor {
+	height: 350px;
+	vertical-align: middle;
+}
+
+.work-case {
+	margin: 0 30px;
+
+}
+
+.work-case img {
+	-moz-box-shadow: 8px 8px 20px #888888; /* 老的 Firefox */
+	box-shadow: 8px 8px 20px #888888;
+}
+
+.case-cn-title {
+	color: #1e1e1e;
+	padding-top: 28px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.case-en-title {
+	margin-top: 10px;
+	font-size: 10px;
+	color: #828282;
+}
+
+/* client */
+#client {
+	padding-left: 4%;
+}
+
+#client .en-title {
+	width: 25%;
+}
+
+#client .cn-title {
+	width: 745px;
+	margin-left: 27%;
+}
+
+#client .content {
+	width: 80%;
+	margin-left: 12%;
+	margin-top: 38px;
+}
+
+#client .cn-title h3 {
+	padding-top: 160px;
+}
+

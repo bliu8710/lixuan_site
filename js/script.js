@@ -20,10 +20,6 @@ $(document).ready(function(){
 	$("#home").show();
 	$("#home_label").show();
 
-	//$("#about").show();
-	//$("#about_label").show();
-
-
 	$("#home_button").click(function(){
 		hideall();
 		$("#home").show();
