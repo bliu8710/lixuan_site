@@ -1,5 +1,5 @@
 body {
-	font-family: "微软雅黑", tahoma, arial, 'Hiragino Sans GB' sans-serif;
+	font-family: 'verlagbold', tahoma, arial, 'Hiragino Sans GB' sans-serif;
 	/*background-color: #eeeeee;*/
 }
 
@@ -30,6 +30,7 @@ body {
 .nav_btn {
 	width: 33px;
 	height: 33px;
+	cursor: pointer;
 }
 
 .nav_right {
@@ -103,9 +104,9 @@ body {
 
 .slidesjs-pagination li a {
 	display: block;
-	width: 13px;
+	width: 15px;
 	height: 0;
-	padding-top: 13px;
+	padding-top: 15px;
 	background-image: url(img/pagination.png);
 	background-position: 0 0;
 	float: left;
@@ -114,11 +115,11 @@ body {
 
 .slidesjs-pagination li a.active,
 .slidesjs-pagination li a:hover.active {
-	background-position: 0 -13px
+	background-position: 0 -15px
 }
 
 .slidesjs-pagination li a:hover {
-	background-position: 0 -26px
+	background-position: 0 -15px
 }
 
 
@@ -135,14 +136,18 @@ body {
 	font-size: 60px;
 	font-weight: 600;
 	margin: 14px 0;
+	letter-spacing: 3px;
 }
 
 .en-title .small-part {
-	color: #7e7e7e;
+	color: #7d7d7d;
 	font-size: 18px;
-	font-weight: 600;
 	letter-spacing: 3px;
 	margin: 14px 0;
+}
+
+.cn-title, .case-cn-title {
+	font-family: "微软雅黑", tahoma, arial, 'Hiragino Sans GB' sans-serif;
 }
 
 .cn-title h3 {
@@ -173,13 +178,14 @@ body {
 }
 
 .content article {
-	font-size: 16px;
-	color: #828282;
-	letter-spacing: 0.5px;
-	line-height: 210%;
+	font-family: "微软雅黑", tahoma, arial, 'Hiragino Sans GB' sans-serif;
+	font-size: 15px;
+	color: #3b3b3b;
+	letter-spacing: 1.2px;
+	line-height: 220%;
 }
 
-.content h4 {
+.content .large-size {
 	font-size: 16px;
 	color: #333333;
 	font-weight: bold;
@@ -192,6 +198,10 @@ body {
 
 #service .content {
 	line-height: 190%;
+}
+
+#service .content article {
+	letter-spacing: 0;
 }
 
 #contact {
@@ -208,6 +218,11 @@ body {
 	letter-spacing: 2.5px;
 	padding-top: 145px;
 	margin-bottom: 10px;
+}
+
+#contact .content article {
+	letter-spacing: 0;
+	color: #828282;
 }
 
 strong {
@@ -337,4 +352,8 @@ strong {
 	width: 100%;
 	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#EEEEEE));/*Safari 、Chrome*/
 	z-index: -1;
+}
+
+article p {
+	position:relative;
 }
