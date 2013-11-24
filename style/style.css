@@ -110,22 +110,20 @@ body > #wrap {
 }
 
 .container {
-	top: 15px;
-	width: 84%;
+	width: 80%;
+	height: 81%;
 	clear: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 8%;
-	margin-bottom: 1%;
-	/*height: 84%;*/
+	padding: 1% 0;
 }
 
 
 .slidesjs-pagination {
-	width: 	5%;
+	width: 	50px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 3%;
+	margin-top: 2%;
 }
 
 .slidesjs-pagination li {
@@ -225,6 +223,11 @@ body > #wrap {
 .content .small-size {
 	font-size: 13px;
 	color: #828282;
+}
+
+
+#about {
+	padding-top: 1.5%;
 }
 
 #service .content {

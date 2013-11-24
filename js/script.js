@@ -38,6 +38,9 @@ $(document).ready(function(){
 	$("#home").show();
 	$("#home_label").css('visibility',"visible");
 
+	//$("#about").show();
+	//$("#about_label").css('visibility',"visible");
+
 	$("#home_button").click(function(){
 		hideall();
 		$("#home").show();
