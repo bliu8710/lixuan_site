@@ -1,13 +1,58 @@
 body {
-	font-family: 'verlagbold', tahoma, arial, 'Hiragino Sans GB' sans-serif;
+	font-family: 'verlagbold', "Helvetica Neue",Helvetica,Arial,sans-serif;
 	/*background-color: #eeeeee;*/
 }
 
-.header {
+#header {
+	margin-bottom: -12px; /* header高度的负值 */
+	position: relative;
 	width: 100%;
 	height: 12px;
 	background-repeat: repeat-x;
 }
+
+html, body, #wrap {
+	height: 100%;
+}
+
+body > #wrap {
+	height: auto;
+	min-height: 100%;
+}
+
+#main {
+	padding-top: 12px; /* 必须使用和header相同的高度 */
+	padding-bottom: 32px; /* 必须使用和footer相同的高度 */
+}  
+
+#footer {
+	width: 100%;
+	position: relative;
+	margin-top: -32px; /* footer高度的负值 */
+	height: 32px;
+	clear:both;
+}
+
+#footer {
+	color: #ffffff;
+	vertical-align: middle;
+	line-height: 32px;
+	background-repeat: repeat-x;
+	font-size: 12px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
 
 .logo {
 	width: 117px;
@@ -73,20 +118,7 @@ body {
 	margin-right: auto;
 	margin-top: 8%;
 	margin-bottom: 1%;
-	height: 84%;
-}
-
-.footer {
-	color: #ffffff;
-	width: 100%;
-	position: relative;
-	margin-top: -32px; /* footer高度的负值 */
-	height: 32px;
-	clear:both;
-	vertical-align: middle;
-	line-height: 32px;
-	background-repeat: repeat-x;
-	font-size: 12px;
+	/*height: 84%;*/
 }
 
 
