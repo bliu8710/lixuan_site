@@ -6,12 +6,12 @@ function hideall() {
 	$("#client").hide();	
 	$("#contact").hide();
 	
-	$("#home_label").hide();	
-	$("#about_label").hide();
-	$("#service_label").hide();
-	$("#work_label").hide();
-	$("#client_label").hide();	
-	$("#contact_label").hide();
+	$("#home_label").css('visibility', "hidden");	
+	$("#about_label").css('visibility', "hidden");
+	$("#service_label").css('visibility', "hidden");
+	$("#work_label").css('visibility', "hidden");
+	$("#client_label").css('visibility', "hidden");	
+	$("#contact_label").css('visibility', "hidden");
 }
 
 function showLines(lines) {
@@ -36,18 +36,18 @@ $(document).ready(function(){
 
 	hideall();
 	$("#home").show();
-	$("#home_label").show();
+	$("#home_label").css('visibility',"visible");
 
 	$("#home_button").click(function(){
 		hideall();
 		$("#home").show();
-		$("#home_label").show();
+		$("#home_label").css('visibility',"visible");
 	});
 
 	$("#about_button").click(function(){
 		hideall();
 		$("#about").show();
-		$("#about_label").show();
+		$("#about_label").css('visibility',"visible");
 
 		$("#about .cn-title").hide();
 		$("#about .cn-title").fadeIn();
@@ -59,7 +59,7 @@ $(document).ready(function(){
 	$("#service_button").click(function(){
 		hideall();
 		$("#service").show();
-		$("#service_label").show();
+		$("#service_label").css('visibility',"visible");
 
 		$("#service .cn-title").hide();
 		$("#service .cn-title").fadeIn();
@@ -70,19 +70,19 @@ $(document).ready(function(){
 	$("#work_button").click(function(){
 		hideall();
 		$("#work").show();
-		$("#work_label").show();
+		$("#work_label").css('visibility',"visible");
 	});
 
 	$("#client_button").click(function(){
 		hideall();
 		$("#client").show();
-		$("#client_label").show();
+		$("#client_label").css('visibility',"visible");
 	});
 
 	$("#contact_button").click(function(){
 		hideall();
 		$("#contact").show();
-		$("#contact_label").show();
+		$("#contact_label").css('visibility',"visible");
 
 		$("#contact .cn-title").hide();
 		$("#contact .cn-title").fadeIn();
@@ -112,78 +112,76 @@ $(document).ready(function(){
 	$("#home_button").hover(
 		function () {
 			// Over
-			$("#home_label").fadeIn('fast');
-
+			$("#home_label").css('visibility',"visible");
 		},
 		function () {
 			// Out
 			if($("#home").is(':hidden')) {
-				$("#home_label").fadeOut('fast');
+				$("#home_label").css('visibility', "hidden");
 			}
 		}
 	);
 	$("#about_button").hover(
 		function () {
 			// Over
-			$("#about_label").fadeIn('fast');
+			$("#about_label").css('visibility',"visible");
 
 		},
 		function () {
 			// Out
 			if($("#about").is(':hidden')) {
-				$("#about_label").fadeOut('fast');
+				$("#about_label").css('visibility', "hidden");
 			}
 		}
 	);
 	$("#service_button").hover(
 		function () {
 			// Over
-			$("#service_label").fadeIn('fast');
+			$("#service_label").css('visibility',"visible");
 
 		},
 		function () {
 			// Out
 			if($("#service").is(':hidden')) {
-				$("#service_label").fadeOut('fast');
+				$("#service_label").css('visibility', "hidden");
 			}
 		}
 	);
 	$("#work_button").hover(
 		function () {
 			// Over
-			$("#work_label").fadeIn('fast');
+			$("#work_label").css('visibility',"visible");
 
 		},
 		function () {
 			// Out
 			if($("#work").is(':hidden')) {
-				$("#work_label").fadeOut('fast');
+				$("#work_label").css('visibility', "hidden");
 			}
 		}
 	);
 	$("#client_button").hover(
 		function () {
 			// Over
-			$("#client_label").fadeIn('fast');
-
+			$("#client_label").css('visibility',"visible");
 		},
 		function () {
 			// Out
 			if($("#client").is(':hidden')) {
-				$("#client_label").fadeOut('fast');
+				$("#client_label").css('visibility', "hidden");
 			}
 		}
 	);
 	$("#contact_button").hover(
 		function () {
 			// Over
-			$("#contact_label").fadeIn('fast');
+			$("#contact_label").css('visibility',"visible");
 
 		},
 		function () {
 			// Out
 			if($("#contact").is(':hidden')) {
-				$("#contact_label").fadeOut('fast');
+				$("#contact_label").css('visibility', "hidden");
 			}
 		}
 	);
