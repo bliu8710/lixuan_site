@@ -65,11 +65,11 @@ $(document).ready(function(){
 	
 
 	hideall();
-	//$("#home").show();
-	//$("#home_label").css('visibility',"visible");
+	$("#home").show();
+	$("#home_label").css('visibility',"visible");
 
-	$("#work").show();
-	$("#work_label").css('visibility',"visible");
+	//$("#client").show();
+	//$("#client_label").css('visibility',"visible");
 
 	$("#home_button").click(function(){
 		hideall();

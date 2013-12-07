@@ -484,3 +484,31 @@ article p {
 	float: right;
 	margin-top: 180px;
 }
+
+@media screen and (max-device-width: 1440px) {
+	#work .content {
+		margin-left: -34px;
+	}
+
+	.work-case {
+		margin: 0 15px;
+	}
+
+	#client .cn-title {
+		width: 673px;
+	}
+
+	#client .content {
+		margin-top: 20px;
+		width: 980px;
+	}
+
+	#client img {
+		max-width: 93.5%;
+		max-height: 93.5%;
+	}
+
+	#home {
+		padding-top: 7%;
+	}
+}
