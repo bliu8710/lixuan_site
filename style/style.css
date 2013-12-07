@@ -462,12 +462,12 @@ article p {
 }
 
 
-#work3-slides {
+.work-slides {
 	width: 100%;
 	height: 100%;
 }
 
-#work3-slides .slidesjs-container, #work3-slides .slidesjs-control {
+.work-slides .slidesjs-container, .work-slides .slidesjs-control {
 	width: 750px !important;
 	height: 470px !important;
 	margin-left: auto;
@@ -475,12 +475,12 @@ article p {
 	vertical-align: middle;
 }
 
-#work3-slides .slidesjs-previous {
+.work-slides .slidesjs-previous {
 	float: left;
 	margin-top: 180px;
 }
 
-#work3-slides .slidesjs-next {
+.work-slides .slidesjs-next {
 	float: right;
 	margin-top: 180px;
 }
