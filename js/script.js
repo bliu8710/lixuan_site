@@ -5,6 +5,7 @@ function hideall() {
 	$("#work").hide();
 	$("#client").hide();	
 	$("#contact").hide();
+	$("#work3-slides").hide();
 	
 	$("#home_label").css('visibility', "hidden");	
 	$("#about_label").css('visibility', "hidden");
@@ -33,13 +34,32 @@ function _showLines(lines, from) {
 }
 
 $(document).ready(function(){
+	$('#dialog').jqm();
+
+	$('#slides').slidesjs({
+		width: 1373,
+		height: 613,
+		navigation: {
+			active: false,
+		},
+		play: {
+			active: false,
+			auto: true,
+			interval: 5000,
+			swap: true,
+			restartDelay: 1000
+		},
+		callback: {
+			complete: function(number) {
+			}
+		}
+	});
+
+	
 
 	hideall();
 	$("#home").show();
 	$("#home_label").css('visibility',"visible");
-
-	//$("#about").show();
-	//$("#about_label").css('visibility',"visible");
 
 	$("#home_button").click(function(){
 		hideall();
@@ -73,6 +93,7 @@ $(document).ready(function(){
 	$("#work_button").click(function(){
 		hideall();
 		$("#work").show();
+		$("#work3-slides").hide();
 		$("#work_label").css('visibility',"visible");
 	});
 
@@ -92,25 +113,22 @@ $(document).ready(function(){
 		showLines($("#contact article p"));
 	});
 
-	$('#slides').slidesjs({
-		width: 1373,
-		height: 613,
-		navigation: {
-			active: false,
-		},
-		play: {
-			active: false,
-			auto: true,
-			interval: 5000,
-			swap: true,
-			restartDelay: 1000
-		},
-		callback: {
-			complete: function(number) {
-			}
-		}
-	});
+	$('#work-3').click(function(){
+		$('#dialog').jqmShow();
 
+		$('#work3-slides').slidesjs({
+			width: 600,
+			height: 400,
+			navigation: false,
+			play: {
+				active: false,
+				auto: true,
+				interval: 5000,
+				swap: true,
+			},
+		});
+		$("#work3-slides").show();
+	});
 
 	$("#home_button").hover(
 		function () {
@@ -188,4 +206,7 @@ $(document).ready(function(){
 			}
 		}
 	);
+
+	
+	
 });

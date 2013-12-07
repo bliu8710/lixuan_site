@@ -6,11 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="style/reset.css" />
 	<link rel="stylesheet" type="text/css" href="style/font/stylesheet.css" />
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<!-- SlidesJS Required: Link to jquery.slides.js -->
   	<script src="js/jquery.slides.js"></script>
   	<!-- End SlidesJS Required -->
+  	<script type="text/javascript" src="js/jqModal.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style/jqModal.css" />
 </head>
 <body>
 
@@ -19,7 +21,6 @@
 <div class="bg-3"></div>
 <div class="bg-4"></div>
 <div class="bg-5"></div>
-<div class="bg-6"></div>
 
 <div id="header" style="background-image:url(image/header_bg.png);"></div>
 <div id="wrap">
@@ -31,7 +32,7 @@
 				<div class="nav_btn" id="mail_button" style="background-image:url(image/mailbutton.png)"></div>
 			</li>
 			<li>
-				<div class="nav_btn" id="weibobutton" style="background-image:url(image/weibobutton.png)"></div>
+				<a href="http://www.weibo.com/u/3178333914?topnav=1&wvr=5&topsug=1"><div class="nav_btn" id="weibobutton" style="background-image:url(image/weibobutton.png)"></div></a>
 			</li>
 			<li>
 				<div class="nav_btn" id-"weixin_button" style="background-image:url(image/weixinbutton.png)"></div>
@@ -58,7 +59,7 @@
 				<div class="nav_btn" id="work_button" style="background-image:url(image/workbutton.png)"></div>
 			</li>
 			<li>
-				<div class="nav_label"><span id="client_label">CLIENT</span></div>
+				<div class="nav_label"><span id="client_label">CLIENTS</span></div>
 				<div class="nav_btn" id="client_button" style="background-image:url(image/clientbutton.png)"></div>
 			</li>
 			<li>
@@ -153,7 +154,7 @@
 					<p class="case-cn-title">万宝龙</p>
 					<p class="case-en-title">MONTBLANC</p>
 				</div>
-				<div class="work-case">
+				<div class="work-case" id="work-3">
 					<img src="image/work3.jpg" alt="">
 					<p class="case-cn-title">博世中国</p>
 					<p class="case-en-title">BOSCH</p>
@@ -162,13 +163,25 @@
 					<img src="image/right_anchor.png" alt="">
 				</div>
 			</div>
+			<div class="jqmWindow" id="dialog">
+			<div id="close-div"><a id="close" href="#" class="jqmClose">Close</a></div>
+				<div id="work3-slides">
+					<a href="#" class="slidesjs-previous slidesjs-navigation"><img src="image/left_anchor_white.png" alt=""></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"><img src="image/right_anchor_white.png" alt=""></a>
+					<img src="image/work3_1.jpg" alt="">
+					<img src="image/work3_2.jpg" alt="">
+					<img src="image/work3_3.jpg" alt="">
+				</div>
+			</div>
 		</div>
+
+		
 
 		<div id="client">
 			<div class="title">
 				<div class="en-title">
 					<div class="grey-part">OUR</div>
-					<div class="black-part">CLIENT</div>
+					<div class="black-part">CLIENTS</div>
 					<div class="small-part">COOPERATION</div>
 				</div>
 				<div class="cn-title">
@@ -176,7 +189,7 @@
 				</div>
 			</div>
 			<div class="content">
-				<img src="image/client.png" alt="">
+				<img src="image/client.png" alt=""><span class="more">和更多...</span>
 			</div>
 		</div>
 
@@ -200,7 +213,10 @@
 				</article>
 			</div>
 		</div>
+
 	</div>
+
+
 
 
 </div> <!-- end of main -->
