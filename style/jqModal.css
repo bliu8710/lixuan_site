@@ -5,7 +5,7 @@
 	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
 	
 .jqmWindow {
-    /*display: none;*/
+    display: none;
     
     position: fixed;
     top: 23%;
