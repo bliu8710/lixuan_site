@@ -562,8 +562,55 @@ article p {
 	}
 
 	#contact {
-		padding-top: 8%;
+		padding-top: 10%;
 	}
+
+	.nav_right li {
+		margin-top: 18px;
+	}
+
+	.en-title .black-part, .en-title .grey-part {
+		margin: 0 0;
+	}
+
+	.en-title .small-part {
+		margin: 8px 0;
+	}
+
+	.cn-title h3 {
+		font-size: 18px;
+		padding-top: 130px;
+		margin-bottom: 10px;
+	}
+
+	.content {
+		margin-top: 8px;
+	}
+
+	.content article {
+		line-height: 180%;
+	}
+
+	.cn-title {
+		width: 440px;
+	}
+
+	#about {
+		width: 730px;
+	}
+
+	#work .content {
+		margin-left: -20px;
+	}
+
+	#client .cn-title h3 {
+		padding-top: 125px;
+	}
+
+	#contact .cn-title h3 {
+		padding-top: 120px;
+	}
+
 }
 
 @media screen and (max-device-width: 1280px) {
@@ -595,7 +642,7 @@ article p {
 	}
 
 	#home {
-		padding-top: 7%;
+		padding-top: 3%;
 		margin-left: 2%;
 	}
 
@@ -632,11 +679,12 @@ article p {
 	}
 
 	.content article {
-		line-height: 200%;
+		line-height: 190%;
+		letter-spacing: 1px;
 	}
 
 	.cn-title {
-		width: 472px;
+		width: 434px;
 	}
 
 	#about {

@@ -68,8 +68,8 @@ $(document).ready(function(){
 	$("#home").show();
 	$("#home_label").css('visibility',"visible");
 
-	//$("#contact").show();
-	//$("#contact_label").css('visibility',"visible");
+	//$("#work").show();
+	//$("#work_label").css('visibility',"visible");
 
 	$("#home_button").click(function(){
 		hideall();
